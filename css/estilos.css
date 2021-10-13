@@ -1,0 +1,40 @@
+#titulo {
+  font-size: 19px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+#titulo a {
+  font-weight: lighter;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+.list-group-item.li {
+  width: 170px;
+}
+
+ul li img {
+  width: 30px;
+  height: 35px;
+}
+
+#perfil {
+  width: 100px;
+  height: 100px;
+}
+
+#agregar img {
+  width: 43px;
+  height: 40px;
+  position: relative;
+  top: 42px;
+  right: 55px;
+}
+
+label {
+  margin-left: 30px;
+  font-weight: bolder;
+}
+/*# sourceMappingURL=estilos.css.map */

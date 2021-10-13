@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Certamen 2</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+
+        <!--estilos-->
+        <link href="css/estilos.css" rel="stylesheet">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="container-fluid">
+
+        <div id = "titulo" class="row mb-3">
+            <div class="col-sm-2">
+                <p>Ficha del Estudiante</p>
+                <p>María Pérez <a id="editar" href="#" class="pe-auto">Editar</a></p>
+            </div>
+            <div class="col">
+                <img id="perfil" src="1.jpg" alt="1">
+            </div>
+        </div>
+    
+        <form >
+            <div class="row mb-3">
+            <fieldset id="seccion1" class="col-sm-6" disabled>
+            
+            <div class="row mb-3">
+                <label for="inputRUT" class="col-sm-2 col-form-label">RUT</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="rut" value="11111111-1">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputTelefono" class="col-sm-2 col-form-label">Teléfono</label>
+                <div class="col-sm-8">
+                  <input type="email" class="form-control" id="telefono" value="11111111-11">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputCorreo" class="col-sm-2 col-form-label">Correo Electrónico</label>
+                <div class="col-sm-8">
+                  <input type="email" class="form-control" id="correo" value="maria.perez@gmail.com">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputAcudientes" class="col-sm-2 col-form-label">Acudientes</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="acudientes" value="Ninguno">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputFechanacimiento" class="col-sm-2 col-form-label">Fecha de Nacimiento</label>
+                <div class="col-sm-8">
+                  <input type="date" class="form-control" id="fechanacimiento" value="2016-05-12">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="inputRegion" class="col-sm-2 col-form-label">Región</label>
+                  <select name="region" id="region" class="col-sm-8">
+                      <option value="0">Atacama</option>
+                      <option value="1">Valparaíso</option>
+                  </select>
+            </div>
+            <div class="row mb-3">
+                <label for="inputComuna" class="col-sm-2 col-form-label">Comuna</label>
+                  <select name="comuna" id="comuna" class="col-sm-8">
+                      <option> -- </option>
+                  </select>
+            </div>
+            <div class="row mb-3">
+                <label for="inputDireccion" class="col-sm-2 col-form-label">Direccion</label>
+                <div class="col-sm-8">
+                  <input type="text" class="form-control" id="direccion" value="XXXXXXXXX, XXXX">
+                </div>
+            </div>
+
+            <button id = "actualizar" type="button" class="btn btn-primary" >Actualizar</button>
+
+            </fieldset>
+
+            <fieldset id="seccion2" class="col-sm-5" disabled>
+                <div class="row mb-5">
+                    <label for="inputCurso" class="col-sm-2 col-form-label">Curso</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" id="curso" value="4 primaria">
+                    </div>
+                </div>
+                <a id="agregar" href="#"><img  src="2.jpg" alt="2"></a>
+                <div id = "tabla" class="row mb-3">
+                    <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item li">Asignaturas</li>
+                        <li class="list-group-item li">Objetivos</li>
+                        <li class="list-group-item li">Nota</li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item li">Matemáticas</li>
+                        <li class="list-group-item li">Comprensión</li>
+                        <li class="list-group-item li">6.0</li>
+                        <li class="list-group-item"> <a href="#"><img src="3.jpg" alt="3"></a> </li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item li">Física</li>
+                        <li class="list-group-item li">Lógica</li>
+                        <li class="list-group-item li">7.0</li>
+                        <li class="list-group-item"> <a href="#"><img src="3.jpg" alt="3"></a> </li>
+                      </ul>
+                      <ul class="list-group list-group-horizontal">
+                        <li class="list-group-item li">Español</li>
+                        <li class="list-group-item li">Gramática</li>
+                        <li class="list-group-item li">7.0</li>
+                        <li class="list-group-item"> <a href="#"><img src="3.jpg" alt="3"></a> </li>
+                      </ul>
+                </div>
+
+                <fieldset id="seccionAgregar" disabled>
+                    <div class="mb-3 col-sm-5">
+                        <input type="text" id="asignatura" class="form-control" placeholder="Asignatura">
+                    </div>
+                    <div class="mb-3 col-sm-5">
+                        <input type="text" id="objetivo" class="form-control" placeholder="Objetivo">
+                      </div>
+                      <div class="mb-3 col-sm-5">
+                        <input type="text" id="nota" class="form-control" placeholder="Nota">
+                      </div>
+                    <button id="agregarAsignatura" type="button" class="btn btn-primary">Agregar</button>
+                  </fieldset>
+
+
+            </fieldset>
+        </div>
+        </form>
+        </div>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="js/index.js" async></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    </body>
+</html>
